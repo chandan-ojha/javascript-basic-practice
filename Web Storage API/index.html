@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Storage API</title>
+</head>
+<body>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Local Stroage</h2>
+
+          <p>
+             <button onclick="setLocalStroage('username','chandan')">Set local stroage user name</button>
+          </p>
+
+          <p>
+             <button onclick="getLocalStroage('username')">Get local stroage user name</button>
+          </p>
+    
+          <p>
+             <button onclick="setLocalStroage('name','Chandan Ojha')">Set local stroage name</button>
+          </p>
+
+          <p>
+             <button onclick="getLocalStroage('name')">Get local stroage name</button>
+          </p>
+    
+          <p>
+             <button onclick="removeLocalStroage('username')">Remove local stroage user name</button>
+          </p>
+
+          <p>
+             <button onclick="clearLocalStroage('username')">Clear local stroage user name</button>
+         </p>
+
+        </div>
+
+        <div class="column" style="background-color:#bbb;">
+          <h2>Session Stroage</h2>
+          <p>
+            <button onclick="setSessionStroage('username','chandan')">Set session stroage user name</button>
+          </p>
+
+          <p>
+             <button onclick="getSessionStroage('username')">Get session stroage user name</button>
+          </p>
+   
+          <p>
+            <button onclick="setSessionStroage('name','Chandan Ojha')">Set session stroage name</button>
+          </p>
+
+          <p>
+            <button onclick="getSessionStroage('name')">Get session stroage name</button>
+          </p>
+
+          <p>
+            <button onclick="getSessionKeyLength()">Get session stroage length</button>
+          </p>
+   
+          <p>
+            <button onclick="removeSessionStroage('username')">Remove session stroage user name</button>
+          </p>
+
+          <p>
+            <button onclick="removeSessionStroage('name')">Remove session stroage name</button>
+          </p>
+
+          <p>
+            <button onclick="clearSessionStroage('username')">Clear session stroage user name</button>
+          </p>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
